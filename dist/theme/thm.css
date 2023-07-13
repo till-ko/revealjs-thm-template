@@ -24,6 +24,38 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-repeat: no-repeat;
 }
 
+.reveal .itilogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 20%;
+  top: 4.5%;
+  z-index: 31;
+  width: 11.25%;
+  height: 6.58%;
+  background-image: url("../../assets/img/iti_2020.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .mnilogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/img/Logo_THM_CG_FB06_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
