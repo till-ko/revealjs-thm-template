@@ -1,0 +1,64 @@
+/**
+ * THM theme for reveal.js. This is the corporate design of THM
+ *
+ * By Till Koch, till.koch@mni.thm.de
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/arial-fontfamily/arial.css);
+//@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #4A5C66;
+$headingColor: #4A5C66;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #80BA24;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+// THM Logo in top left corner
+.reveal .thmlogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 13.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/img/thm-logo.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
