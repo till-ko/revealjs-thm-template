@@ -42,15 +42,34 @@ $heading4Size: 1.0em;
 @include dark-bg-text-color(#fff);
 
 // Footer
-.reveal .footer-left {
+.reveal .footer {
 	position: fixed;
+	display: block;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 5.2%;
+	min-height: 12pt;
 	background-color: #4A5C66;
 }
 
+.reveal .footer-left {
+	position: fixed;
+	display: block;
+	left: 3.5%;
+	bottom: 2.6%;
+	 -ms-transform: translateY(-50%);
+	transform: translateY(50%);
+	z-index: 0;
+	font-family: Arial;
+	font-size: 12pt;
+	text-align: center;
+	height: 12pt;
+	line-height: 1;
+	background-color: transparent;
+	color: #fff;
+	padding: 5px;
+}
 
 // ***************************
 //  LOGO STYLES
@@ -115,16 +134,25 @@ $heading4Size: 1.0em;
  *********************************************/
 
  // TODO: Change Number Height
+
+// footer: left start: 3.5%
+// right: page number end: 96.9% / 96.2%
+
+
 .reveal .slide-number {
-	position: absolute;
+	position: fixed;
 	display: block;
-	right: 8px;
-	bottom: 8px;
-	z-index: 31;
+	right: 3.8%;
+	bottom: 2.6%;
+	 -ms-transform: translateY(-50%);
+	transform: translateY(50%);
+	z-index: 0;
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 12pt;
+	text-align: center;
+	height: 12pt;
 	line-height: 1;
-	background-color: #4A5C66;
+	background-color: transparent;
 	color: #fff;
 	padding: 5px;
 }
