@@ -167,6 +167,46 @@ $heading4Size: 1.0em;
 	margin: 0 3px;
 }
 
+:root{
+	counter-reset: title;
+}
+
+// BACKGROUND
+// 18.4% von oben 93.8% von unten -->
+// .reveal .slides section[data-state="thm-title1"] {//+ .backgrounds div:nth-child(n) .slide-background-content {
+// 	counter-increment: title;
+// 	-ms-transform: translateY(-50%);
+// 	z-index: 31;
+// 	background-color: #80BA24;
+// 	transform: translateY(50%);
+// }
+
+
+
+.reveal .backgrounds div[data-background-slide-name="thm-title1"] .slide-background-content {
+// GENERAL BACKGROUND 
+	top: 18.4%;
+	left: 0;
+	height: 75.4%;
+}
+
+// HEADER
+// von links: 70% text start 71,7 ende 96,7
+// von oben: 42,4 text endet unten bei 86,1 ende bei 98,7
+
+.reveal .slides .thm-title {
+	position: relative;
+	display: block;
+	top: 42.4%;
+	left: 70%;
+	width: 26.7%;
+	height: 56.3%;
+	
+	background-color: #fff;
+	text-align: left;
+	margin-bottom: 0;
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

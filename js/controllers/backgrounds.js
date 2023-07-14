@@ -127,6 +127,9 @@ export default class Backgrounds {
 			backgroundPosition: slide.getAttribute( 'data-background-position' ),
 			backgroundTransition: slide.getAttribute( 'data-background-transition' ),
 			backgroundOpacity: slide.getAttribute( 'data-background-opacity' ),
+
+			// added for naming of individual slide backgrounds to make accessible in thm theming scss
+			backgroundSlideName: slide.getAttribute( 'data-background-slide-name' ),
 		};
 
 		const dataPreload = slide.hasAttribute( 'data-preload' );
@@ -181,6 +184,9 @@ export default class Backgrounds {
 		if( data.backgroundColor ) element.style.backgroundColor = data.backgroundColor;
 		if( data.backgroundGradient ) element.style.backgroundImage = data.backgroundGradient;
 		if( data.backgroundTransition ) element.setAttribute( 'data-background-transition', data.backgroundTransition );
+		
+		// added for naming of individual slide backgrounds to make accessible in thm theming scss
+		if( data.backgroundSlideName ) element.setAttribute( 'data-background-slide-name', data.backgroundSlideName );
 
 		if( dataPreload ) element.setAttribute( 'data-preload', '' );
 

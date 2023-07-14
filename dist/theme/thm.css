@@ -116,6 +116,28 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   margin: 0 3px;
 }
 
+:root {
+  counter-reset: title;
+}
+
+.reveal .backgrounds div[data-background-slide-name=thm-title1] .slide-background-content {
+  top: 18.4%;
+  left: 0;
+  height: 75.4%;
+}
+
+.reveal .slides .thm-title {
+  position: relative;
+  display: block;
+  top: 42.4%;
+  left: 70%;
+  width: 26.7%;
+  height: 56.3%;
+  background-color: #fff;
+  text-align: left;
+  margin-bottom: 0;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
