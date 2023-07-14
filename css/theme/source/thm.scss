@@ -13,7 +13,7 @@
 
 // Include theme-specific fonts
 @import url(./fonts/arial-fontfamily/arial.css);
-@import url(./fonts/din-pro/din-pro.css)
+@import url(./fonts/din-pro/din-pro.css);
 //@import url(./fonts/source-sans-pro/source-sans-pro.css);
 
 
@@ -24,8 +24,8 @@ $mainColor: #4A5C66;
 $headingColor: #4A5C66;
 
 $mainFontSize: 42px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Arial', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Arial', 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -62,7 +62,7 @@ $heading4Size: 1.0em;
 	 -ms-transform: translateY(-50%);
 	transform: translateY(50%);
 	z-index: 0;
-	font-family: Arial;
+	font-family: 'DIN Pro Cond';
 	font-size: 12pt;
 	text-align: center;
 	height: 12pt;
@@ -87,7 +87,7 @@ $heading4Size: 1.0em;
 	z-index: 31;
   	width: 13.5%;   
   	height: 9.5%;
-  	background-image: url('../../assets/img/thm-logo.svg');
+  	background-image: url('../../assets/logos/thm-logo.svg');
   	background-size: contain;
   	background-position: 0% 0%;
   	background-repeat: no-repeat;
@@ -107,7 +107,7 @@ $heading4Size: 1.0em;
 	z-index: 31;
 	width: 11.25%;
 	height: 6.58%;
-	background-image: url('../../assets/img/iti_2020.svg');
+	background-image: url('../../assets/logos/iti_2020.svg');
 	background-size: contain;
 	background-position: 0% 0%;
 	background-repeat: no-repeat;
@@ -124,7 +124,7 @@ $heading4Size: 1.0em;
 	z-index: 31;
   	width: 34.5%;   
   	height: 9.5%;
-  	background-image: url('../../assets/img/Logo_THM_CG_FB06_4c.svg');
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB06_4c.svg');
   	background-size: contain;
   	background-position: 0% 0%;
   	background-repeat: no-repeat;

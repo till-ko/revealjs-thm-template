@@ -4,6 +4,7 @@
  * By Till Koch, till.koch@mni.thm.de
  */
 @import url(./fonts/arial-fontfamily/arial.css);
+@import url(./fonts/din-pro/din-pro.css);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff;
 }
@@ -27,7 +28,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   -ms-transform: translateY(-50%);
   transform: translateY(50%);
   z-index: 0;
-  font-family: Arial;
+  font-family: "DIN Pro Cond";
   font-size: 12pt;
   text-align: center;
   height: 12pt;
@@ -47,7 +48,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   z-index: 31;
   width: 13.5%;
   height: 9.5%;
-  background-image: url("../../assets/img/thm-logo.svg");
+  background-image: url("../../assets/logos/thm-logo.svg");
   background-size: contain;
   background-position: 0% 0%;
   background-repeat: no-repeat;
@@ -63,7 +64,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   z-index: 31;
   width: 11.25%;
   height: 6.58%;
-  background-image: url("../../assets/img/iti_2020.svg");
+  background-image: url("../../assets/logos/iti_2020.svg");
   background-size: contain;
   background-position: 0% 0%;
   background-repeat: no-repeat;
@@ -79,7 +80,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   z-index: 31;
   width: 34.5%;
   height: 9.5%;
-  background-image: url("../../assets/img/Logo_THM_CG_FB06_4c.svg");
+  background-image: url("../../assets/logos/Logo_THM_CG_FB06_4c.svg");
   background-size: contain;
   background-position: 0% 0%;
   background-repeat: no-repeat;
@@ -119,12 +120,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --r-background-color: #fff;
-  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
+  --r-main-font: Arial, Source Sans Pro, Helvetica, sans-serif;
   --r-main-font-size: 42px;
   --r-main-color: #4A5C66;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
+  --r-heading-font: Arial, Source Sans Pro, Helvetica, sans-serif;
   --r-heading-color: #4A5C66;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
