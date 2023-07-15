@@ -183,7 +183,7 @@ $heading4Size: 1.0em;
 
 
 
-.reveal .backgrounds div[data-background-slide-name="thm-title1"] .slide-background-content {
+.reveal .backgrounds div[data-background-slide-name="thm-title-slide-1"] .slide-background-content {
 // GENERAL BACKGROUND 
 	top: 18.4%;
 	left: 0;
@@ -192,19 +192,31 @@ $heading4Size: 1.0em;
 
 // HEADER
 // von links: 70% text start 71,7 ende 96,7
-// von oben: 42,4 text endet unten bei 86,1 ende bei 98,7
+// von oben: 42,4 text endet unten bei 86,1 ende bei 89,7
 
-.reveal .slides .thm-title {
-	position: relative;
-	display: block;
-	top: 42.4%;
+// .reveal .slides .thm-title {
+// 	position: absolute;
+// 	visibility: visible;
+// 	display: block;
+// 	top: 42.4vh;
+// 	left: 70%;
+// 	width: 26.7%;
+// 	min-height: 56.3vh;
+// 	background-color: red;
+// 	text-align: left;
+// 	margin-bottom: 0;
+// }
+
+.reveal .slides div.thm-title-1 {
+	position: absolute;
+	z-index: 80;
 	left: 70%;
+	top: 42.4%;
 	width: 26.7%;
-	height: 56.3%;
-	
-	background-color: #fff;
-	text-align: left;
-	margin-bottom: 0;
+	height: 47.3%;
+	background-color: white;
+	// text-align: left;
+	// margin-bottom: 0;
 }
 
 // Theme template ------------------------------
