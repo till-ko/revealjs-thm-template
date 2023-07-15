@@ -73,9 +73,9 @@ $heading4Size: 1.0em;
 	padding: 5px;
 }
 
-// ***************************
-//  LOGO STYLES
-// ***************************
+/*********************************************
+ * LOGO STYLES
+ *********************************************/
 
 // THM Logo in top left corner
 .reveal .thmlogo {
@@ -93,7 +93,6 @@ $heading4Size: 1.0em;
   	background-position: 0% 0%;
   	background-repeat: no-repeat;
 }
-
 // 69,3% höhe logo schrift zu gesamthöhe
 // 83,3% breite iti logo zu thm logo
 
@@ -135,12 +134,8 @@ $heading4Size: 1.0em;
  * SLIDE NUMBER
  *********************************************/
 
- // TODO: Change Number Height
-
 // footer: left start: 3.5%
 // right: page number end: 96.9% / 96.2%
-
-
 .reveal .slide-number {
 	position: fixed;
 	display: block;
@@ -167,56 +162,43 @@ $heading4Size: 1.0em;
 	margin: 0 3px;
 }
 
-:root{
-	counter-reset: title;
-}
 
+/*********************************************
+ * TITLE SLIDE BACKGROUND
+ *********************************************/
 // BACKGROUND
-// 18.4% von oben 93.8% von unten -->
-// .reveal .slides section[data-state="thm-title1"] {//+ .backgrounds div:nth-child(n) .slide-background-content {
-// 	counter-increment: title;
-// 	-ms-transform: translateY(-50%);
-// 	z-index: 31;
-// 	background-color: #80BA24;
-// 	transform: translateY(50%);
-// }
-
-
-
+// 18.4% von oben 93.8% von unten
 .reveal .backgrounds div[data-background-slide-name="thm-title-slide-1"] .slide-background-content {
-// GENERAL BACKGROUND 
+	// GENERAL BACKGROUND 
 	top: 18.4%;
 	left: 0;
 	height: 75.4%;
 }
 
+/*********************************************
+ * THM TITLE STYLING
+ *********************************************/
 // HEADER
 // von links: 70% text start 71,7 ende 96,7
 // von oben: 42,4 text endet unten bei 86,1 ende bei 89,7
-
-// .reveal .slides .thm-title {
-// 	position: absolute;
-// 	visibility: visible;
-// 	display: block;
-// 	top: 42.4vh;
-// 	left: 70%;
-// 	width: 26.7%;
-// 	min-height: 56.3vh;
-// 	background-color: red;
-// 	text-align: left;
-// 	margin-bottom: 0;
-// }
-
 .reveal .slides div.thm-title-1 {
 	position: absolute;
-	z-index: 80;
 	left: 70%;
 	top: 42.4%;
 	width: 26.7%;
 	height: 47.3%;
 	background-color: white;
-	// text-align: left;
-	// margin-bottom: 0;
+	margin: unset;
+}
+
+.reveal .slides div.thm-title-1 h1 {
+	position: absolute;
+	display: flex;
+	bottom: 7%;
+	left: 7%;
+	font-size: 25pt;
+	text-align: left;
+	margin: 0;
 }
 
 // Theme template ------------------------------
