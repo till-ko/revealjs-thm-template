@@ -90,6 +90,22 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-repeat: no-repeat;
 }
 
+.reveal .itimnilogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 40%;
+  top: 4.5%;
+  z-index: 31;
+  width: 11.25%;
+  height: 6.58%;
+  background-image: url("../../assets/logos/iti_2020.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
 /*********************************************
  * SLIDE NUMBER
  *********************************************/

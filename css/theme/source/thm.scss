@@ -130,6 +130,23 @@ $heading4Size: 1.0em;
   	background-repeat: no-repeat;
 }
 
+// ITI Logo in top left corner
+.reveal .itimnilogo {
+	position: fixed;
+	display: block;
+	bottom: unset;
+	right: unset;
+	left: 40%;
+	top: 4.5%;
+	z-index: 31;
+	width: 11.25%;
+	height: 6.58%;
+	background-image: url('../../assets/logos/iti_2020.svg');
+	background-size: contain;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+
 /*********************************************
  * SLIDE NUMBER
  *********************************************/
