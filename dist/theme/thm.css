@@ -9,6 +9,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   color: #fff;
 }
 
+/*********************************************
+ * FOOTER
+ *********************************************/
 .reveal .footer {
   position: fixed;
   display: block;
@@ -37,6 +40,52 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-color: transparent;
   color: #fff;
   padding: 5px;
+}
+
+.reveal .slide-menu-button {
+  /* Edited to fit THM Theme */
+  position: fixed !important;
+  display: block !important;
+  left: 1% !important;
+  bottom: 2.6% !important;
+  -ms-transform: translateY(-50%) !important;
+  transform: translateY(50%) !important;
+  z-index: 0 !important;
+  font-family: "DIN Pro Cond" !important;
+  letter-spacing: 2.3px !important;
+  font-size: 24pt !important;
+  text-align: center !important;
+  height: 24pt !important;
+  line-height: 1 !important;
+  /* background-color: transparent;
+  color: #fff; */
+  padding: 5px !important;
+}
+
+.reveal .controls {
+  display: none;
+  position: absolute;
+  right: 0.4%;
+  bottom: 0.8%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(50%);
+  z-index: 11;
+  color: #000;
+  pointer-events: none;
+  font-size: 3pt;
+}
+
+.reveal #customcontrols > ul {
+  position: fixed;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  left: 48%;
+  bottom: 2.6%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(50%);
+  padding: 10px;
+  background-color: none;
 }
 
 /*********************************************
@@ -513,23 +562,4 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   .backgrounds {
     background-color: var(--r-background-color);
   }
-}
-.reveal .slide-menu-button {
-  /* Edited to fit Thm Theme */
-  position: fixed !important;
-  display: block !important;
-  left: 1% !important;
-  bottom: 2.6% !important;
-  -ms-transform: translateY(-50%) !important;
-  transform: translateY(50%) !important;
-  z-index: 0 !important;
-  font-family: "DIN Pro Cond" !important;
-  letter-spacing: 2.3px !important;
-  font-size: 24pt !important;
-  text-align: center !important;
-  height: 24pt !important;
-  line-height: 1 !important;
-  /* background-color: transparent;
-  color: #fff; */
-  padding: 5px !important;
 }
