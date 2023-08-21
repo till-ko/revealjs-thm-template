@@ -174,8 +174,8 @@ $heading4Size: 1.0em;
 	display: block;
 	bottom: unset;
 	right: unset;
-	left: 24%;
-	top: 3.1%;
+	left: 24%; // keep 8x distance
+	top: 3.1%; // only less than 5% over top
 	z-index: 31;
 	width: 11.25%;
 	height: 9.5%;
@@ -184,8 +184,6 @@ $heading4Size: 1.0em;
 	background-position: 0% 0%;
 	background-repeat: no-repeat;
 }
-
-
 
 // IEM Logo in top left corner
 .reveal .iemcflogo {
@@ -456,7 +454,6 @@ $heading4Size: 1.0em;
 .reveal .slide-number-delimiter {
 	margin: 0 3px;
 }
-
 
 /*********************************************
  * TITLE SLIDE BACKGROUND
