@@ -1,7 +1,7 @@
 
 # RevealJS meets Markdown
 
-The following slides show the use of External Markdown to generate beautiful Presentations.
+The following slides show how the external example.md is rendered.
 
 A paragraph with some text and a [link](https://hakim.se).
 
@@ -68,4 +68,4 @@ This is an image with a speaker note from markdown:
 
 ![TestBild](./assets/icons/Bild8.png)
 
-Note: This is an example icon 
+Note: This is an example icon
