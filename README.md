@@ -1,6 +1,7 @@
 # Reveal.js THM Template
 
 This is a THM corporate design template for the reveal.js Framework.
+This Repo is currently under construction not all features you may need are implemented today. Feel free to add them to your liking or just kindly ask for them.
 
 <p align="center">
   <a href="https://revealjs.com">
