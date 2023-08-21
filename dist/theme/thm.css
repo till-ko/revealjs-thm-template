@@ -123,7 +123,183 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-repeat: no-repeat;
 }
 
-.reveal .mnilogo {
+.reveal .studpluslogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 24%;
+  top: 3.1%;
+  z-index: 31;
+  width: 11.25%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo-StudiumPlus_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .iemcflogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CF_FB11_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .mcflogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CF_FB12_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .mndcflogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CF_FB13_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .wicflogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CF_FB14_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .mukcflogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CF_FB21_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .baucglogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CG_FB01_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .eicglogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CG_FB02_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .mecglogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CG_FB03_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .lsecglogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CG_FB04_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .gescglogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CG_FB05_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .mnicglogo {
   position: fixed;
   display: block;
   bottom: unset;
@@ -139,7 +315,39 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-repeat: no-repeat;
 }
 
-.reveal .itimnilogo {
+.reveal .wirtschaftcglogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CG_FB07_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .mukcglogo {
+  position: fixed;
+  display: block;
+  bottom: unset;
+  right: unset;
+  left: 3.5%;
+  top: 4.5%;
+  z-index: 31;
+  width: 34.5%;
+  height: 9.5%;
+  background-image: url("../../assets/logos/Logo_THM_CG_FB21_4c.svg");
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.reveal .itimnicglogo {
   position: fixed;
   display: block;
   bottom: unset;
