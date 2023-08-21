@@ -3,7 +3,7 @@
 
 The following slides show how the external example.md is rendered.
 
-A paragraph with some text and a [link](https://hakim.se).
+A paragraph with some text and a [link](https://thm.de).
 
 ---
 
