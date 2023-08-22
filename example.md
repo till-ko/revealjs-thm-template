@@ -66,6 +66,6 @@ c(3);
 
 This is an image with a speaker note from markdown:
 
-![TestBild](./assets/icons/Bild8.png)
+![TestBild](./assets/icons/house.png)
 
 Note: This is an example icon
