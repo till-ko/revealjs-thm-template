@@ -1,5 +1,7 @@
 /**
- * THM theme for reveal.js. This is the corporate design of THM
+ * THM theme for reveal.js. This is the corporate design theme.
+ * Assets were Taken from the Technische Hochschule Mittelhessen CD Manual,
+ * provided by the THM to all Students.
  *
  * By Till Koch, till.koch@mni.thm.de
  */
@@ -148,8 +150,8 @@ $heading4Size: 1.0em;
   	background-position: 0% 0%;
   	background-repeat: no-repeat;
 }
-// 69,3% höhe logo schrift zu gesamthöhe
-// 83,3% breite iti logo zu thm logo
+// 69,3% logo height compared to page height
+// 83,3% width iti logo compared to thm logo
 
 // ITI Logo next to Standalone THM Logo
 .reveal .itilogo {
@@ -459,7 +461,7 @@ $heading4Size: 1.0em;
  * TITLE SLIDE BACKGROUND
  *********************************************/
 // BACKGROUND
-// 18.4% von oben 93.8% von unten
+// 18.4% from top 93.8% from bottom
 .reveal .backgrounds div[data-background-slide-name="thm-title-slide-1"] .slide-background-content {
 	// GENERAL BACKGROUND 
 	top: 18.4%;
@@ -471,8 +473,8 @@ $heading4Size: 1.0em;
  * THM TITLE STYLING
  *********************************************/
 // HEADER
-// von links: 70% text start 71,7 ende 96,7
-// von oben: 42,4 text endet unten bei 86,1 ende bei 89,7
+// from left: 70% text start 71,7% ende 96,7%
+// from top: 42,4% text ends at bottom at: 86,1% to: 89,7%
 .reveal .slides div.thm-title-1 {
 	position: absolute;
 	left: 70%;
