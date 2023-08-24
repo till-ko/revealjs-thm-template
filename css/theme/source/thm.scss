@@ -1,0 +1,500 @@
+/**
+ * THM theme for reveal.js. This is the corporate design theme.
+ * Assets were Taken from the Technische Hochschule Mittelhessen CD Manual,
+ * provided by the THM to all Students.
+ *
+ * By Till Koch, till.koch@mni.thm.de
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/arial-fontfamily/arial.css);
+@import url(./fonts/din-pro/din-pro.css);
+//@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #4A5C66;
+$headingColor: #4A5C66;
+
+$mainFontSize: 42px;
+$mainFont: 'Arial', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Arial', 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #80BA24;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+/*********************************************
+ * FOOTER
+ *********************************************/
+
+.reveal .footer {
+	position: fixed;
+	display: block;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5.2%;
+	min-height: 12pt;
+	background-color: #4A5C66;
+}
+
+// University Text Styling on footer
+.reveal .footer-left {
+	position: fixed;
+	display: block;
+	left: 3.5%;
+	bottom: 2.6%;
+	 -ms-transform: translateY(-50%);
+	transform: translateY(50%);
+	z-index: 0;
+	font-family: 'DIN Pro Cond';
+	letter-spacing: 2.3px;
+	font-size: 12pt;
+	text-align: center;
+	height: 12pt;
+	line-height: 1;
+	background-color: transparent;
+	color: #fff;
+	padding: 5px;
+}
+
+// Menu bar icon center to footer - university
+.reveal .slide-menu-button {
+	/* Edited to fit THM Theme */
+	position: fixed !important;
+	display: block !important;
+	left: 1% !important;
+	bottom: 2.6% !important;
+	-ms-transform: translateY(-50%) !important;
+	transform: translateY(50%) !important;
+	z-index: 0 !important;
+	font-family: 'DIN Pro Cond' !important;
+	letter-spacing: 2.3px !important;
+	font-size: 24pt !important;
+	text-align: center !important;
+	height: 24pt !important;
+	line-height: 1 !important;
+	/* background-color: transparent;
+	color: #fff; */
+	padding: 5px !important;
+}
+
+// center small controls on right corner in footer
+.reveal .controls {
+    display: none;
+    position: absolute;
+    right: 0.4%;
+    bottom: 0.8%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(50%);
+    z-index: 11;
+    color: #000;
+    pointer-events: none;
+    font-size: 3pt;
+}
+
+// fit customcontrols to be in footer next to menu button
+.reveal #customcontrols > ul {
+	position: fixed; 
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	left: 48%;
+	bottom: 2.6%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(50%);
+	// border: 1px solid var(--r-link-color);
+	// border-radius: 5px;
+	padding: 10px;
+	background-color: none;
+}
+
+/*********************************************
+ * LOGO STYLES
+ *********************************************/
+
+// Standalone THM Logo in top left corner
+.reveal .thmlogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 13.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/thm-logo.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+// 69,3% logo height compared to page height
+// 83,3% width iti logo compared to thm logo
+
+// ITI Logo next to Standalone THM Logo
+.reveal .itilogo {
+	position: fixed;
+	display: block;
+	bottom: unset;
+	right: unset;
+	left: 20%;
+	top: 4.5%;
+	z-index: 31;
+	width: 11.25%;
+	height: 6.58%;
+	background-image: url('../../assets/logos/iti_2020.svg');
+	background-size: contain;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+
+// Studium Plus Logo next to standalone THM Logo
+.reveal .studpluslogo {
+	position: fixed;
+	display: block;
+	bottom: unset;
+	right: unset;
+	left: 24%; // keep 8x distance
+	top: 3.1%; // only less than 5% over top
+	z-index: 31;
+	width: 11.25%;
+	height: 9.5%;
+	background-image: url('../../assets/logos/Logo-StudiumPlus_4c.svg');
+	background-size: contain;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+
+// IEM Logo in top left corner
+.reveal .iemcflogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CF_FB11_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// M Logo in top left corner
+.reveal .mcflogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CF_FB12_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// MND Logo in top left corner
+.reveal .mndcflogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CF_FB13_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// WI Logo in in top left corner
+.reveal .wicflogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CF_FB14_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// MUK CF Logo in in top left corner
+.reveal .mukcflogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CF_FB21_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// BAU Logo in in top left corner
+.reveal .baucglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB01_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// EI Logo in in top left corner
+.reveal .eicglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB02_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// ME Logo in in top left corner
+.reveal .mecglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB03_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// LSE Logo in in top left corner
+.reveal .lsecglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB04_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// GES Logo in in top left corner
+.reveal .gescglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB05_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// MNI Logo in top left corner
+.reveal .mnicglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB06_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// WIRTSCHAFT Logo in in top left corner
+.reveal .wirtschaftcglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB07_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// MUK Logo in in top left corner
+.reveal .mukcglogo {
+	position: fixed;
+	display: block;
+    bottom: unset;
+    right: unset;
+	left: 3.5%;
+	top: 4.5%;
+	z-index: 31;
+  	width: 34.5%;   
+  	height: 9.5%;
+  	background-image: url('../../assets/logos/Logo_THM_CG_FB21_4c.svg');
+  	background-size: contain;
+  	background-position: 0% 0%;
+  	background-repeat: no-repeat;
+}
+
+// ITI Logo next to MNI Logo
+.reveal .itimnicglogo {
+	position: fixed;
+	display: block;
+	bottom: unset;
+	right: unset;
+	left: 40%;
+	top: 4.5%;
+	z-index: 31;
+	width: 11.25%;
+	height: 6.58%;
+	background-image: url('../../assets/logos/iti_2020.svg');
+	background-size: contain;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+
+// footer: left start: 3.5%
+// right: page number end: 96.9% / 96.2%
+.reveal .slide-number {
+	position: fixed;
+	display: block;
+	right: 3.8%;
+	bottom: 2.6%;
+	 -ms-transform: translateY(-50%);
+	transform: translateY(50%);
+	z-index: 0;
+	font-family: Arial;
+	font-size: 12pt;
+	text-align: center;
+	height: 12pt;
+	line-height: 1;
+	background-color: transparent;
+	color: #fff;
+	padding: 5px;
+}
+
+.reveal .slide-number a {
+	color: currentColor;
+}
+
+.reveal .slide-number-delimiter {
+	margin: 0 3px;
+}
+
+/*********************************************
+ * TITLE SLIDE BACKGROUND
+ *********************************************/
+// BACKGROUND
+// 18.4% from top 93.8% from bottom
+.reveal .backgrounds div[data-background-slide-name="thm-title-slide-1"] .slide-background-content {
+	// GENERAL BACKGROUND 
+	top: 18.4%;
+	left: 0;
+	height: 75.4%;
+}
+
+/*********************************************
+ * THM TITLE STYLING
+ *********************************************/
+// HEADER
+// from left: 70% text start 71,7% ende 96,7%
+// from top: 42,4% text ends at bottom at: 86,1% to: 89,7%
+.reveal .slides div.thm-title-1 {
+	position: absolute;
+	left: 70%;
+	top: 42.4%;
+	width: 26.7%;
+	height: 47.3%;
+	background-color: white;
+	margin: unset;
+}
+
+.reveal .slides div.thm-title-1 h1 {
+	position: absolute;
+	display: flex;
+	bottom: 7%;
+	left: 7%;
+	font-size: 25pt;
+	text-align: left;
+	margin: 0;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

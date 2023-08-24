@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./arial-fontfam-eot/Arial-Regular.eot');
+    src: url('./arial-fontfam-eot/Arial-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./arial-fontfam-woff/Arial-Regular.woff') format('woff'),
+         url('./arial-fontfam-ttf/Arial-Regular.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./arial-fontfam-eot/Arial-Italic.eot');
+    src: url('./arial-fontfam-eot/Arial-Italic.eot?#iefix') format('embedded-opentype'),
+         url('./arial-fontfam-woff/Arial-Italic.woff') format('woff'),
+         url('./arial-fontfam-ttf/Arial-Italic.TTF') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./arial-fontfam-eot/Arial-Bold.eot');
+    src: url('./arial-fontfam-eot/Arial-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./arial-fontfam-woff/Arial-Bold.woff') format('woff'),
+         url('./arial-fontfam-ttf/Arial-Bold.TTF') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./arial-fontfam-eot/Arial-Bold-Italic.eot');
+    src: url('./arial-fontfam-eot/Arial-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+         url('./arial-fontfam-woff/Arial-Bold-Italic.woff') format('woff'),
+         url('./arial-fontfam-ttf/Arial-Black-Italic.TTF') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}

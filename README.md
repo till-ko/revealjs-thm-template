@@ -1,3 +1,8 @@
+# Reveal.js THM Template
+
+This is a THM corporate design template for the reveal.js Framework.
+This Repo is currently under construction not all features you may need are implemented today. Feel free to add them to your liking or just kindly ask for them.
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
@@ -18,6 +23,7 @@ Want to create reveal.js presentation in a graphical editor? Try <https://slides
 ---
 
 ### Sponsors
+
 Hakim's open source work is supported by <a href="https://github.com/sponsors/hakimel">GitHub sponsors</a>. Special thanks to:
 <div align="center">
   <table>
@@ -38,13 +44,14 @@ Hakim's open source work is supported by <a href="https://github.com/sponsors/ha
 ---
 
 ### Getting started
+
 - 🚀 [Install reveal.js](https://revealjs.com/installation)
 - 👀 [View the demo presentation](https://revealjs.com/demo)
 - 📖 [Read the documentation](https://revealjs.com/markup/)
 - 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
 - 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
 
---- 
+---
 <div align="center">
   MIT licensed | Copyright © 2011-2023 Hakim El Hattab, https://hakim.se
 </div>

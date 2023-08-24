@@ -92,7 +92,7 @@ export default class SlideNumber {
 		}
 
 		let url = '#' + this.Reveal.location.getHash( slide );
-		return this.formatNumber( value[0], value[1], value[2], url );
+		return this.formatNumber(value[0], value[1], value[2], url );
 
 	}
 
@@ -107,17 +107,20 @@ export default class SlideNumber {
 	 * @return {string} HTML string fragment
 	 */
 	formatNumber( a, delimiter, b, url = '#' + this.Reveal.location.getHash() ) {
-
+		let speakerName = "Name des Referenten"
+		if(this.Reveal.getConfig().speakerName) {
+			speakerName = this.Reveal.getConfig().speakerName;
+		}
 		if( typeof b === 'number' && !isNaN( b ) ) {
 			return  `<a href="${url}">
-					<span class="slide-number-a">${a}</span>
+					<span class="slide-number-a">${speakerName} &emsp;&emsp;&emsp;&emsp; Seite ${a}</span>
 					<span class="slide-number-delimiter">${delimiter}</span>
 					<span class="slide-number-b">${b}</span>
 					</a>`;
 		}
 		else {
 			return `<a href="${url}">
-					<span class="slide-number-a">${a}</span>
+					<span class="slide-number-a">${speakerName} &emsp;&emsp;&emsp;&emsp; Seite ${a}</span>
 					</a>`;
 		}
 
