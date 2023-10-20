@@ -1,0 +1,30 @@
+image: node:18-alpine
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+before_script:
+  # pull plugins from their source repo
+  - apk add --no-cache git
+  - cd plugin
+  - rm -r -f reveal.js-menu
+  - rm -r -f reveal.js-plugins
+  - git clone https://github.com/denehyg/reveal.js-menu.git
+  - git clone https://github.com/rajgoel/reveal.js-plugins.git
+  - cd ..
+
+# provide full repository as static git-page
+pages:
+  tags:
+    - npm
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  
