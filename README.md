@@ -1,7 +1,16 @@
 # Reveal.js THM Template
 
+[![pipeline status](https://git.thm.de/tjkc14/revealjs-thm-template/badges/master/pipeline.svg)](https://tjkc14.git-pages.thm.de/revealjs-thm-template/)
+
 This is a THM corporate design template for the reveal.js Framework.
 This Repo is currently under construction not all features you may need are implemented today. Feel free to add them to your liking or just kindly ask for them.
+
+## See [Demo](https://tjkc14.git-pages.thm.de/revealjs-thm-template/) for yourself
+
+Starting today, you can take a test drive of the "Frankenstein" version of the original PowerPoint presentations in our corporate design and hakimel's demo presentation on a statically hosted GitLab page. I've brought this presentation to life, stitching together the best elements from both worlds to showcase the possibilities.  
+Explore the fusion of our CI-Design and the content that drives reveal.js, on this page: <https://tjkc14.git-pages.thm.de/revealjs-thm-template/>
+
+Note: On statically hosted Git-pages free-hand-writings are only kept until you reload the page!
 
 <p align="center">
   <a href="https://revealjs.com">
