@@ -8,6 +8,7 @@
 html.print-pdf {
 	* {
 		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
 	}
 
 	& {
@@ -27,9 +28,11 @@ html.print-pdf {
 	/* Remove any elements not needed in print. */
 	.nestedarrow,
 	.reveal .controls,
+	.reveal .custom-controls,
 	.reveal .progress,
 	.reveal .playback,
 	.reveal.overview,
+	.reveal .slide-menu-button,
 	.state-background {
 		display: none !important;
 	}
@@ -104,6 +107,18 @@ html.print-pdf {
 	.reveal .backgrounds {
 		display: none;
 	}
+	.reveal .footer {
+		position: absolute !important;
+	}
+	.reveal .footer-left {
+		position: absolute !important;
+	}
+	.reveal .pdf-page .mnicglogo {
+		position: absolute !important;
+	}
+	.reveal .pdf-page .itimnicglogo {
+		position: absolute !important;
+	}
 	.reveal .slide-background {
 		display: block !important;
 		position: absolute;
@@ -146,6 +161,7 @@ html.print-pdf {
 		display: block;
 		position: absolute;
 		font-size: 14px;
+		z-index: inherit;
 	}
 
 	/* This accessibility tool is not useful in PDF and breaks it visually */
