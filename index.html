@@ -551,6 +551,9 @@ Reveal.on( 'customevent', function() {
 				 * PUT YOUR SPEAKER NAME HERE:
 				*********************************************/
 				speakerName: "Max Mustermann",
+				// showNotes: true, // Could also be used while printing to show notes in Print
+				
+				pdfSeparateFragments: true, // Can be disabled, then only the last state of fragmented slides is displayed.
 
 				controls: true,
 				progress: true,
@@ -566,7 +569,7 @@ Reveal.on( 'customevent', function() {
 				disableLayout: false,
 				
 				// Slide Numbering type
-				slideNumber: 'c',
+				slideNumber: 'c', // other options: c/t to showcase total number of slides
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealChalkboard, RevealCustomControls],
