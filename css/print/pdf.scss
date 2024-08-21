@@ -2,6 +2,8 @@
  * This stylesheet is used to print reveal.js
  * presentations to PDF.
  *
+ * CAVE: It was also altered to make print of thm slides more beautiful
+ *
  * https://revealjs.com/pdf-export/
  */
 
@@ -115,14 +117,6 @@ html.print-pdf {
 	}
 
 	.reveal .footer-left {
-		position: absolute !important;
-	}
-
-	.reveal .pdf-page .mnicglogo {
-		position: absolute !important;
-	}
-
-	.reveal .pdf-page .itimnicglogo {
 		position: absolute !important;
 	}
 
