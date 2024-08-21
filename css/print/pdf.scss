@@ -48,6 +48,7 @@ html.print-pdf {
 		height: auto !important;
 		overflow: hidden !important;
 	}
+
 	.reveal .slides {
 		position: static;
 		width: 100% !important;
@@ -108,18 +109,23 @@ html.print-pdf {
 	.reveal .backgrounds {
 		display: none;
 	}
+
 	.reveal .footer {
 		position: absolute !important;
 	}
+
 	.reveal .footer-left {
 		position: absolute !important;
 	}
+
 	.reveal .pdf-page .mnicglogo {
 		position: absolute !important;
 	}
+
 	.reveal .pdf-page .itimnicglogo {
 		position: absolute !important;
 	}
+
 	.reveal .slide-background {
 		display: block !important;
 		position: absolute;
@@ -135,6 +141,7 @@ html.print-pdf {
 		max-width: none;
 		max-height: none;
 	}
+
 	.reveal .speaker-notes-pdf {
 		display: block;
 		width: 100%;
@@ -168,5 +175,53 @@ html.print-pdf {
 	/* This accessibility tool is not useful in PDF and breaks it visually */
 	.aria-status {
 		display: none;
+	}
+
+	/*********************************************
+	* TITLE SLIDE BACKGROUND
+	*********************************************/
+	// BACKGROUND
+	// 18.4% from top 93.8% from bottom
+	div[data-background-slide-name="thm-title-slide-1"] .slide-background-content {
+		// GENERAL BACKGROUND 
+		top: 18.4%;
+		left: 0;
+		height: 75.4%;
+	}
+
+	// Allow Whitespace on Titleslide in section - is otherwise overwritten by the print.js funciton
+	section.present[data-background-slide-name="thm-title-slide-1"] {
+		position: absolute;
+		bottom: 0px;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		inset: 0px !important;
+	}
+
+	/*********************************************
+	* THM TITLE STYLING
+	*********************************************/
+	// HEADER
+	// from left: 70% text start 71,7% ende 96,7%
+	// from top: 42,4% text ends at bottom at: 86,1% to: 89,7%
+	div.thm-title-1 {
+		position: absolute;
+		left: 70%;
+		top: 42.4%;
+		width: 26.7%;
+		height: 47.3%;
+		background-color: white;
+		margin: unset;
+	}
+
+	div.thm-title-1 h1 {
+		position: absolute;
+		display: flex;
+		bottom: 7%;
+		left: 7%;
+		font-size: 25pt;
+		text-align: left;
+		margin: 0;
 	}
 }
