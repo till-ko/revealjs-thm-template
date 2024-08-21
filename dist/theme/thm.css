@@ -94,7 +94,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * LOGO STYLES
  *********************************************/
 .reveal .thmlogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -110,7 +110,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .itilogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -126,7 +126,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .studpluslogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -142,7 +142,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .iemcflogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -158,7 +158,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .mcflogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -174,7 +174,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .mndcflogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -190,7 +190,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .wicflogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -206,7 +206,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .mukcflogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -222,7 +222,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .baucglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -238,7 +238,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .eicglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -254,7 +254,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .mecglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -270,7 +270,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .lsecglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -286,7 +286,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .gescglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -302,7 +302,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .mnicglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -318,7 +318,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .wirtschaftcglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -334,7 +334,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .mukcglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
@@ -350,7 +350,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .itimnicglogo {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: unset;
   right: unset;
