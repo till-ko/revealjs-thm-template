@@ -1,6 +1,5 @@
 import { SLIDES_SELECTOR } from '../utils/constants.js'
 import { queryAll, createStyleSheet } from '../utils/util.js'
-import SlideNumber from './slidenumber.js';
 
 /**
  * Setups up our presentation for printing/exporting to PDF.
@@ -77,8 +76,6 @@ export default class Print {
 		const config = this.Reveal.getConfig();
 		const speakerName = config.speakerName;
 		const slides = queryAll(this.Reveal.getRevealElement(), SLIDES_SELECTOR)
-		console.log(slides);
-		console.log(this.Reveal);
 		const totalslides = this.Reveal.getTotalSlides()
 		// Compute slide numbers now, before we start duplicating slides
 		const injectPageNumbers = config.slideNumber && /all|print/i.test(config.showSlideNumber);
@@ -204,41 +201,15 @@ export default class Print {
 
 				}
 
-				console.log(injectPageNumbers)
-
 				// Inject page numbers if `slideNumbers` are enabled
 				if (injectPageNumbers) {
 					const nr = this.getPDFSlideNumber(slide, slideNumberPdf++, totalslides);
-					console.log(nr);
 					const numberElement = document.createElement('div');
 					numberElement.classList.add('slide-number');
 					numberElement.classList.add('slide-number-pdf');
 					numberElement.innerHTML = nr;
 					page.appendChild(numberElement);
 				}
-
-				// Inject Logo
-				// TODO: Check weather it is displayed on this slide? and make function to easily change logos - maybe also for html manifested in config
-				const logoElement = document.createElement('div');
-				logoElement.classList.add('mnicglogo');
-				page.appendChild(logoElement);
-
-				const doublelogoElement = document.createElement('div');
-				doublelogoElement.classList.add('itimnicglogo');
-				page.appendChild(doublelogoElement);
-
-				// Inject footer
-				// TODO: Check weather is displayed 
-				const footerElement = document.createElement('div');
-				footerElement.classList.add('footer');
-				page.appendChild(footerElement);
-				// Inject footer-left
-				// TODO: Check weather is displayed 
-				const footerleftElement = document.createElement('div');
-				footerleftElement.classList.add('footer-left');
-				footerleftElement.innerHTML = "UNIVERSITY OF APPLIED SCIENCES"
-				page.appendChild(footerleftElement);
-
 
 				// Copy page and show fragments one after another
 				if (config.pdfSeparateFragments) {
