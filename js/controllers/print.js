@@ -203,7 +203,7 @@ export default class Print {
 
 				// Inject page numbers if `slideNumbers` are enabled
 				if (injectPageNumbers) {
-					const nr = this.getPDFSlideNumber(slide, slideNumberPdf++, totalslides);
+					const nr = this.getPDFSlideNumber(slide, slideNumberPdf, totalslides);
 					const numberElement = document.createElement('div');
 					numberElement.classList.add('slide-number');
 					numberElement.classList.add('slide-number-pdf');
@@ -264,6 +264,11 @@ export default class Print {
 					queryAll(page, '.fragment:not(.fade-out)').forEach(function (fragment) {
 						fragment.classList.add('visible');
 					});
+				}
+
+				// Increment page numbers if `slideNumbers` are enabled
+				if (injectPageNumbers) {
+					slideNumberPdf++;
 				}
 
 			}
