@@ -278,12 +278,15 @@ export default class PrintView {
         await new Promise(requestAnimationFrame);
 
         pages.forEach(page => pageContainer.appendChild(page));
+        
         // Re-run JS-based content layout after the slide is added to page DOM
         this.Reveal.slideContent.layout(this.Reveal.getSlidesElement());
+
         // Notify subscribers that the PDF layout is good to go
         this.Reveal.dispatchEvent({ type: 'pdf-ready' });
 
         viewportElement.classList.remove('loading-scroll-mode');
+
     }
 
     /**

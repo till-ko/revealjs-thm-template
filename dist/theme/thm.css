@@ -15,7 +15,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * FOOTER
  *********************************************/
 .reveal .footer {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: 0;
   left: 0;
@@ -26,7 +26,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .footer-left {
-  position: fixed;
+  position: absolute;
   display: block;
   left: 3.5%;
   bottom: 2.6%;
@@ -375,7 +375,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   bottom: 2.6%;
   -ms-transform: translateY(-50%);
   transform: translateY(50%);
-  z-index: 0;
+  z-index: 1;
   font-family: Arial;
   font-size: 12pt;
   text-align: center;
