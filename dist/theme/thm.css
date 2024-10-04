@@ -32,7 +32,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   bottom: 2.6%;
   -ms-transform: translateY(-50%);
   transform: translateY(50%);
-  z-index: 0;
+  z-index: 5;
   font-family: "DIN Pro Cond";
   letter-spacing: 2.3px;
   font-size: 12pt;
@@ -454,6 +454,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-link-color-hover: #a5dd4e;
   --r-selection-background-color: #bbe579;
   --r-selection-color: #fff;
+  --r-overlay-element-bg-color: 240, 240, 240;
+  --r-overlay-element-fg-color: 0, 0, 0;
 }
 
 .reveal-viewport {
