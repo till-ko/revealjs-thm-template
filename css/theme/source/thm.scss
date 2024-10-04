@@ -49,7 +49,7 @@ $heading4Size: 1.0em;
  *********************************************/
 
 .reveal .footer {
-	position: absolute;
+	position: fixed;
 	display: block;
 	bottom: 0;
 	left: 0;
@@ -61,7 +61,7 @@ $heading4Size: 1.0em;
 
 // University Text Styling on footer
 .reveal .footer-left {
-	position: absolute;
+	position: fixed;
 	display: block;
 	left: 3.5%;
 	bottom: 2.6%;
@@ -438,7 +438,7 @@ $heading4Size: 1.0em;
 	bottom: 2.6%;
 	 -ms-transform: translateY(-50%);
 	transform: translateY(50%);
-	z-index: 1;
+	z-index: 0;
 	font-family: Arial;
 	font-size: 12pt;
 	text-align: center;
