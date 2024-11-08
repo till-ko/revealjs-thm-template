@@ -310,15 +310,20 @@ export default class ScrollView {
 				autoAnimateElements: pageElement.querySelectorAll( '.scroll-auto-animate-page' ),
 				autoAnimatePages: []
 			});
-			console.log("HIER");
-			console.log(page.contentElement.querySelector( 'div[data-background-slide-name="thm-title-slide-1"]'));
+
+
+			// CHANGES MADE HERE ARE FOR THE THM THEME TITLE STYLING
+			// console.log("HIER");
+			// console.log(page.contentElement.querySelector( 'div[data-background-slide-name="thm-title-slide-1"]'));
 				// .firstChild.className);
-			if (page.contentElement.querySelector( 'div[data-background-slide-name="thm-title-slide-1"]')!==null)
+			if (page.contentElement.querySelector( 'div[data-background-slide-name="thm-title-slide-1"]')!==null) {
+				// This is a THM Title slide and therefore needs the wohle page and no auto height to be displayed correctly
+				// console.log(slideSize.height);
 				page.pageElement.style.setProperty( '--slide-height', slideSize.height + 'px' );
+			}
 			else
 				page.pageElement.style.setProperty( '--slide-height', config.center === true ? 'auto' : slideSize.height + 'px' );
 			
-			// TODO: CHECK HERE FOR TITLESLIDE and then dont do auto but height +px!
 			this.slideTriggers.push({
 				page: page,
 				activate: () => this.activatePage( page ),
@@ -391,7 +396,7 @@ export default class ScrollView {
 				page.stickyElement.style.position = 'relative';
 				page.pageElement.style.scrollSnapAlign = page.pageHeight < viewportHeight ? 'center' : 'start';
 			}
-
+			// console.log(page);
 			return page;
 		} );
 

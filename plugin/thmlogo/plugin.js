@@ -158,6 +158,22 @@ function createTHMScrollview() {
 		footerLeftDiv.innerText = 'UNIVERSITY OF APPLIED SCIENCES';
 		pages[i].appendChild(footerLeftDiv);
 	}
+	// For this to work from here the Scroll view would have to be static, so we will have to live with changes in the source on this one.
+	//
+	// const slideSize = this.Reveal.getComputedSlideSize( window.innerWidth, window.innerHeight );
+	// var pages = document.querySelectorAll(".scroll-page");
+	// for (var i=0; i<pages.length; i++) {
+	// 	if (pages[i].querySelector( '.scroll-page-content div[data-background-slide-name="thm-title-slide-1"]')!==null) {
+	// 		// This is a THM Title slide and therefore needs the wohle page and no auto height to be displayed correctly
+		
+	// 		// pages[i].style['--slide-height'] = '1028 px';
+	// 		// pages[i].style['--slide-height'] = slideSize.height + 'px';
+	// 		pages[i].style.setProperty( '--slide-height', slideSize.height + 'px !important');
+	// 		console.log(pages[i]);
+	// 	} else {
+	// 		pages[i].style.setProperty( '--slide-height', 'auto');
+	// 	}
+	// }
 }
 
 // reveal plugin registration
