@@ -310,8 +310,14 @@ export default class ScrollView {
 				autoAnimateElements: pageElement.querySelectorAll( '.scroll-auto-animate-page' ),
 				autoAnimatePages: []
 			});
-
-			page.pageElement.style.setProperty( '--slide-height', config.center === true ? 'auto' : slideSize.height + 'px' );
+			console.log("HIER");
+			console.log(page.contentElement.querySelector( 'div[data-background-slide-name="thm-title-slide-1"]'));
+				// .firstChild.className);
+			if (page.contentElement.querySelector( 'div[data-background-slide-name="thm-title-slide-1"]')!==null)
+				page.pageElement.style.setProperty( '--slide-height', slideSize.height + 'px' );
+			else
+				page.pageElement.style.setProperty( '--slide-height', config.center === true ? 'auto' : slideSize.height + 'px' );
+			
 			// TODO: CHECK HERE FOR TITLESLIDE and then dont do auto but height +px!
 			this.slideTriggers.push({
 				page: page,
