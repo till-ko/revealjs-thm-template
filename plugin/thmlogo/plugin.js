@@ -3,6 +3,7 @@
  */
 
 var printMode = (/print-pdf/gi).test(window.location.search);
+var scrollMode = (/scroll/gi).test(window.location.search);
 
 function initializeTHMPrint() {
 	//return;
@@ -13,6 +14,17 @@ function initializeTHMPrint() {
 		return;
 	}
 	createTHMPrintout();
+}
+
+function initializeTHMScroll() {
+	//return;
+	// console.log("initializeScroll", document.querySelectorAll(".scroll-page-content").length);
+	if (!document.querySelectorAll(".scroll-page-content").length) {
+		// wait for pdf pages to be created
+		setTimeout(initializeTHMScroll, 500);
+		return;
+	}
+	createTHMScrollview();
 }
 
 // Enum for differnt logos
@@ -42,8 +54,8 @@ const RevealLogosPlugin = (function () {
 	function initLogos(config) {
 		const revealElement = document.querySelector('.reveal');
 
-		// add theme "on top" of all the slides
-		if (!printMode) {
+		// add theme "on top" of all the slides if no special mode is activated
+		if (!printMode && !scrollMode) {
 			// check config and create logo accordingly
 			if (config.logo) {
 				const logoDiv = document.createElement('div');
@@ -114,6 +126,40 @@ function createTHMPrintout() {
 	}
 }
 
+function createTHMScrollview() {
+	// add theme to every printed page
+	var pages = document.querySelectorAll(".scroll-page-content");
+	const config = Reveal.getConfig().thmlogos;
+	// console.log(pages)
+	// console.log(this.Reveal.getTotalSlides())
+	for (var i = 0; i < pages.length; i++) {
+
+		// check config and create logo accordingly
+		if (config.logo) {
+			const logoDiv = document.createElement('div');
+			logoDiv.classList.add(LogosEnum[config.logo]);
+			pages[i].appendChild(logoDiv);
+		}
+
+		// check weather an additional logo is in config and create logo accordingly
+		if (config.logo_addition) {
+			const fbLogoDiv = document.createElement('div');
+			fbLogoDiv.classList.add(LogosEnum[config.logo_addition]);
+			pages[i].appendChild(fbLogoDiv);
+		}
+
+		// add footer element
+		const footerDiv = document.createElement('div');
+		footerDiv.classList.add('footer');
+		pages[i].appendChild(footerDiv);
+
+		const footerLeftDiv = document.createElement('div');
+		footerLeftDiv.classList.add('footer-left');
+		footerLeftDiv.innerText = 'UNIVERSITY OF APPLIED SCIENCES';
+		pages[i].appendChild(footerLeftDiv);
+	}
+}
+
 // reveal plugin registration
 Reveal.registerPlugin('logos', RevealLogosPlugin);
 
@@ -121,6 +167,10 @@ Reveal.addEventListener('ready', function (event) {
 
 	if (printMode) {
 		initializeTHMPrint();
+		return;
+	}
+	if (scrollMode) {
+		initializeTHMScroll();
 		return;
 	}
 });

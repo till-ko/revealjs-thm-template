@@ -469,6 +469,33 @@ $heading4Size: 1.0em;
 	height: 75.4%;
 }
 
+// account for scroll view
+.reveal-viewport.reveal-scroll div[data-background-slide-name="thm-title-slide-1"] .slide-background-content {
+	// GENERAL BACKGROUND 
+	top: 18.4%;
+	left: 0;
+	height: 75.4%;
+}
+
+section.present[data-background-slide-name="thm-title-slide-1"] {
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	inset: 0px !important;
+}
+
+section.present[data-background-slide-name="thm-title-slide-1"] {
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	inset: 0px !important;
+}
+
+
 /*********************************************
  * THM TITLE STYLING
  *********************************************/
@@ -494,6 +521,16 @@ $heading4Size: 1.0em;
 	text-align: left;
 	margin: 0;
 }
+
+// // Allow Whitespace on Titleslide in section - is otherwise overwritten by the print.js funciton
+// .scroll-page div[data-background-slide-name="thm-title-slide-1"] {
+// 	position: absolute;
+// 	bottom: 0px;
+// 	top: 0px;
+// 	left: 0px;
+// 	right: 0px;
+// 	inset: 0px !important;
+// }
 
 // Theme template ------------------------------
 @import "../template/theme";

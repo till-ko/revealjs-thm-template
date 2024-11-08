@@ -312,7 +312,7 @@ export default class ScrollView {
 			});
 
 			page.pageElement.style.setProperty( '--slide-height', config.center === true ? 'auto' : slideSize.height + 'px' );
-
+			// TODO: CHECK HERE FOR TITLESLIDE and then dont do auto but height +px!
 			this.slideTriggers.push({
 				page: page,
 				activate: () => this.activatePage( page ),
