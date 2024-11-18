@@ -1,7 +1,7 @@
 /*!
  * reveal.js THM Logo plugin
  */
-
+// Modeset based on legacy definition - will be overwritten by init as soon as config becomes available
 var printMode = (/print-pdf/gi).test(window.location.search);
 var scrollMode = (/scroll/gi).test(window.location.search);
 
@@ -51,7 +51,11 @@ const LogosEnum = {
 
 const RevealLogosPlugin = (function () {
 
-	function initLogos(config) {
+	function initLogos(config, view) {
+		// Update view based on config as soon as it becomes available
+		printMode = (view == 'print');
+		scrollMode = (view == 'scroll');
+
 		const revealElement = document.querySelector('.reveal');
 
 		// add theme "on top" of all the slides if no special mode is activated
@@ -85,8 +89,9 @@ const RevealLogosPlugin = (function () {
 	return {
 		id: 'reveal-logos-plugin',
 		init: function (deck) {
+			const view = deck.getConfig().view;
 			const config = deck.getConfig().thmlogos || {};
-			initLogos(config);
+			initLogos(config, view);
 		}
 	};
 })();
