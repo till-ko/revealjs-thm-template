@@ -12,6 +12,43 @@ Explore the fusion of our CI-Design and the content that drives reveal.js, on th
 
 Note: On statically hosted Git-pages free-hand-writings are only kept until you reload the page!
 
+## Version 5 is here: [SCROLL VIEW](https://tjkc14.git-pages.thm.de/revealjs-thm-template/?view=scroll)
+
+Try the new scroll view introduced by hakimel and now also supported by this fork. It is especially useful for Mobile. Either add `/?view=scroll` to watch it in one instance - or see the `Reveal.initialize({})` configuration section to enable it globally if you like it.
+
+## Easily configurable faculty logos
+
+Configuring your faculty's logo has never been easier. See the `Reveal.initialize({})` configuration section for more information.
+
+```js
+thmlogos: {
+  logo: 'MNI_CG',       // Fachbereichslogo
+  logo_addition: 'ITI_MNI_CG',   // Beispiel: Logozusatz (feel free to uncomment this line, if you don't need a second logo)
+  // Recipe: FB_{CG = Campus Gießen, CF = Campus Friedberg}
+  // usage: logo: {'THM', 'ITI', 'MNI_CG', 'ITI_MNI_CG', 'IEM_CF', 'M_CF', 'MND_CF', 'WI_CF', 'MUK_CF', 'BAU_CG', 'EI_CG', 'ME_CG', 'LES_CG', 'GES_CG', 'WIRTSCHAFT_CG', 'MUK_CG', 'STUDIUM_PLUS'}
+},
+```
+
+## Export to PDF
+
+Use the integrated [print-view](https://tjkc14.git-pages.thm.de/revealjs-thm-template/?print-pdf) to easily export your presentation as a pdf. Now featuring full page numbering with the option to split fragmented slides on export. See the `Reveal.initialize({})` configuration for more information.
+
+## Installation
+
+1. Install [Node.js](https://nodejs.org/en) (10.0.0 or later)
+2. Clone this Repo in full depth - otherwise there are some plugins you might need to pull seperately as this template comes with a small selection preconfigured.
+3. `npm install` and `npm run start`
+
+### Just in case you missed cloning with submodules
+
+```bash
+cd plugin
+git clone https://github.com/denehyg/reveal.js-menu.git
+git clone https://github.com/rajgoel/reveal.js-plugins.git
+```
+
+## Credit To REVEALJS
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
@@ -62,5 +99,5 @@ Hakim's open source work is supported by <a href="https://github.com/sponsors/ha
 
 ---
 <div align="center">
-  MIT licensed | Copyright © 2011-2023 Hakim El Hattab, https://hakim.se
+  MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
 </div>

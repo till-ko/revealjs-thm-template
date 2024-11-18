@@ -1,8 +1,9 @@
 /*!
  * reveal.js THM Logo plugin
  */
-
+// Modeset based on legacy definition - will be overwritten by init as soon as config becomes available
 var printMode = (/print-pdf/gi).test(window.location.search);
+var scrollMode = (/scroll/gi).test(window.location.search);
 
 function initializeTHMPrint() {
 	//return;
@@ -13,6 +14,17 @@ function initializeTHMPrint() {
 		return;
 	}
 	createTHMPrintout();
+}
+
+function initializeTHMScroll() {
+	//return;
+	// console.log("initializeScroll", document.querySelectorAll(".scroll-page-content").length);
+	if (!document.querySelectorAll(".scroll-page-content").length) {
+		// wait for pdf pages to be created
+		setTimeout(initializeTHMScroll, 500);
+		return;
+	}
+	createTHMScrollview();
 }
 
 // Enum for differnt logos
@@ -39,11 +51,15 @@ const LogosEnum = {
 
 const RevealLogosPlugin = (function () {
 
-	function initLogos(config) {
+	function initLogos(config, view) {
+		// Update view based on config as soon as it becomes available
+		printMode = (view == 'print');
+		scrollMode = (view == 'scroll');
+
 		const revealElement = document.querySelector('.reveal');
 
-		// add theme "on top" of all the slides
-		if (!printMode) {
+		// add theme "on top" of all the slides if no special mode is activated
+		if (!printMode && !scrollMode) {
 			// check config and create logo accordingly
 			if (config.logo) {
 				const logoDiv = document.createElement('div');
@@ -73,8 +89,9 @@ const RevealLogosPlugin = (function () {
 	return {
 		id: 'reveal-logos-plugin',
 		init: function (deck) {
+			const view = deck.getConfig().view;
 			const config = deck.getConfig().thmlogos || {};
-			initLogos(config);
+			initLogos(config, view);
 		}
 	};
 })();
@@ -114,6 +131,56 @@ function createTHMPrintout() {
 	}
 }
 
+function createTHMScrollview() {
+	// add theme to every printed page
+	var pages = document.querySelectorAll(".scroll-page-content");
+	const config = Reveal.getConfig().thmlogos;
+	// console.log(pages)
+	// console.log(this.Reveal.getTotalSlides())
+	for (var i = 0; i < pages.length; i++) {
+
+		// check config and create logo accordingly
+		if (config.logo) {
+			const logoDiv = document.createElement('div');
+			logoDiv.classList.add(LogosEnum[config.logo]);
+			pages[i].appendChild(logoDiv);
+		}
+
+		// check weather an additional logo is in config and create logo accordingly
+		if (config.logo_addition) {
+			const fbLogoDiv = document.createElement('div');
+			fbLogoDiv.classList.add(LogosEnum[config.logo_addition]);
+			pages[i].appendChild(fbLogoDiv);
+		}
+
+		// add footer element
+		const footerDiv = document.createElement('div');
+		footerDiv.classList.add('footer');
+		pages[i].appendChild(footerDiv);
+
+		const footerLeftDiv = document.createElement('div');
+		footerLeftDiv.classList.add('footer-left');
+		footerLeftDiv.innerText = 'UNIVERSITY OF APPLIED SCIENCES';
+		pages[i].appendChild(footerLeftDiv);
+	}
+	// For this to work from here the Scroll view would have to be static, so we will have to live with changes in the source on this one.
+	//
+	// const slideSize = this.Reveal.getComputedSlideSize( window.innerWidth, window.innerHeight );
+	// var pages = document.querySelectorAll(".scroll-page");
+	// for (var i=0; i<pages.length; i++) {
+	// 	if (pages[i].querySelector( '.scroll-page-content div[data-background-slide-name="thm-title-slide-1"]')!==null) {
+	// 		// This is a THM Title slide and therefore needs the wohle page and no auto height to be displayed correctly
+		
+	// 		// pages[i].style['--slide-height'] = '1028 px';
+	// 		// pages[i].style['--slide-height'] = slideSize.height + 'px';
+	// 		pages[i].style.setProperty( '--slide-height', slideSize.height + 'px !important');
+	// 		console.log(pages[i]);
+	// 	} else {
+	// 		pages[i].style.setProperty( '--slide-height', 'auto');
+	// 	}
+	// }
+}
+
 // reveal plugin registration
 Reveal.registerPlugin('logos', RevealLogosPlugin);
 
@@ -121,6 +188,10 @@ Reveal.addEventListener('ready', function (event) {
 
 	if (printMode) {
 		initializeTHMPrint();
+		return;
+	}
+	if (scrollMode) {
+		initializeTHMScroll();
 		return;
 	}
 });

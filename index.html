@@ -642,6 +642,18 @@ Reveal.on( 'customevent', function() {
 				logo_addition: 'ITI_MNI_CG',   // Beispiel: Logozusatz
 			},
 
+			/*********************************************
+			 * ACTIVATE SCROLL VIEW HERE:
+			 * Uncomment the following line or add "/?view=scroll" to your browser for single instance use
+			*********************************************/
+			// view: 'scroll',
+			scrollProgress: true, 
+			// Other Options :
+			// - 'auto':     Show the scrollbar while scrolling, hide while idle
+			// - true:     Always show the scrollbar
+			// - false:    Never show the scrollbarSet to false to display only on change of slide
+			scrollLayout: 'full', // this is the default value - otherwise the THM slides interfere
+
 			pdfSeparateFragments: true, // Can be disabled, then only the last state of fragmented slides is displayed.
 
 			controls: true,

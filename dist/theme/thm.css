@@ -15,7 +15,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * FOOTER
  *********************************************/
 .reveal .footer {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: 0;
   left: 0;
@@ -26,7 +26,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .footer-left {
-  position: fixed;
+  position: absolute;
   display: block;
   left: 3.5%;
   bottom: 2.6%;
@@ -403,6 +403,30 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   height: 75.4%;
 }
 
+.reveal-viewport.reveal-scroll div[data-background-slide-name=thm-title-slide-1] .slide-background-content {
+  top: 18.4%;
+  left: 0;
+  height: 75.4%;
+}
+
+section.present[data-background-slide-name=thm-title-slide-1] {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  inset: 0px !important;
+}
+
+section.present[data-background-slide-name=thm-title-slide-1] {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  inset: 0px !important;
+}
+
 /*********************************************
  * THM TITLE STYLING
  *********************************************/
@@ -426,6 +450,31 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   margin: 0;
 }
 
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-scroll {
+  display: block !important;
+  position: absolute;
+  font-size: 14px;
+  z-index: 1;
+  visibility: visible;
+  right: 3.8%;
+  bottom: 2.6%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(50%);
+  font-family: Arial;
+  font-size: 12pt;
+  text-align: center;
+  height: 12pt;
+  line-height: 1;
+  background-color: transparent;
+  color: #fff !important;
+  padding: 5px;
+}
+
+.reveal .slide-number-scroll .slide-number-a {
+  color: white;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -433,11 +482,11 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-background-color: #fff;
   --r-main-font: Arial, Source Sans Pro, Helvetica, sans-serif;
   --r-main-font-size: 42px;
-  --r-main-color: #4A5C66;
+  --r-main-color: #4a5c66;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Arial, Source Sans Pro, Helvetica, sans-serif;
-  --r-heading-color: #4A5C66;
+  --r-heading-color: #4a5c66;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
@@ -449,11 +498,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #80BA24;
+  --r-link-color: #80ba24;
   --r-link-color-dark: #547a18;
   --r-link-color-hover: #a5dd4e;
   --r-selection-background-color: #bbe579;
   --r-selection-color: #fff;
+  --r-overlay-element-bg-color: 128, 186, 36;
+  --r-overlay-element-fg-color: 74, 92, 102;
 }
 
 .reveal-viewport {

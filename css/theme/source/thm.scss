@@ -18,12 +18,19 @@
 @import url(./fonts/din-pro/din-pro.css);
 //@import url(./fonts/source-sans-pro/source-sans-pro.css);
 
+// THM CD Color Palette
+$THM_GREEN: #80ba24;
+$THM_GREY: #4a5c66;
+$THM_RED: #9C132E;
+$THM_ORANGE: #F4AA00;
+$THM_CYAN: #00B8E4;
+$THM_BLUE: #002878;
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
-$mainColor: #4A5C66;
-$headingColor: #4A5C66;
+$mainColor: $THM_GREY;
+$headingColor: $THM_GREY;
 
 $mainFontSize: 42px;
 $mainFont: 'Arial', 'Source Sans Pro', Helvetica, sans-serif;
@@ -32,9 +39,11 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #80BA24;
+$linkColor: $THM_GREEN;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
+$overlayElementBgColor: red($THM_GREEN), green($THM_GREEN), blue($THM_GREEN);
+$overlayElementFgColor: red($THM_GREY), green($THM_GREY), blue($THM_GREY);
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
@@ -44,12 +53,25 @@ $heading4Size: 1.0em;
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
 
+// .reveal.has-dark-background,
+// .reveal-viewport.has-dark-background {
+// 	--r-overlay-element-bg-color: 128, 186, 36;
+// 	--r-overlay-element-fg-color: 0, 0, 0;
+// }
+// .reveal.has-light-background,
+// .reveal-viewport.has-light-background {
+// 	--r-overlay-element-bg-color: 0, 0, 0;
+// 	--r-overlay-element-fg-color: 128, 186, 36;
+// }
+
+
+
 /*********************************************
  * FOOTER
  *********************************************/
 
 .reveal .footer {
-	position: fixed;
+	position: absolute;
 	display: block;
 	bottom: 0;
 	left: 0;
@@ -59,9 +81,13 @@ $heading4Size: 1.0em;
 	background-color: #4A5C66;
 }
 
+// .reveal .footer {
+// 	position: absolute !important;
+// }
+
 // University Text Styling on footer
 .reveal .footer-left {
-	position: fixed;
+	position: absolute;
 	display: block;
 	left: 3.5%;
 	bottom: 2.6%;
@@ -469,6 +495,33 @@ $heading4Size: 1.0em;
 	height: 75.4%;
 }
 
+// account for scroll view
+.reveal-viewport.reveal-scroll div[data-background-slide-name="thm-title-slide-1"] .slide-background-content {
+	// GENERAL BACKGROUND 
+	top: 18.4%;
+	left: 0;
+	height: 75.4%;
+}
+
+section.present[data-background-slide-name="thm-title-slide-1"] {
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	inset: 0px !important;
+}
+
+section.present[data-background-slide-name="thm-title-slide-1"] {
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	inset: 0px !important;
+}
+
+
 /*********************************************
  * THM TITLE STYLING
  *********************************************/
@@ -494,6 +547,44 @@ $heading4Size: 1.0em;
 	text-align: left;
 	margin: 0;
 }
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-scroll {
+	display: block !important;
+	position: absolute;
+	font-size: 14px;
+	z-index: 1;
+	visibility: visible;
+	
+	right: 3.8%;
+	bottom: 2.6%;
+		-ms-transform: translateY(-50%);
+	transform: translateY(50%);
+	// z-index: 0;
+	font-family: Arial;
+	font-size: 12pt;
+	text-align: center;
+	height: 12pt;
+	line-height: 1;
+	background-color: transparent;
+	color: #fff !important;
+	padding: 5px;
+}
+
+.reveal .slide-number-scroll .slide-number-a {
+	color: white;
+}
+
+
+// // Allow Whitespace on Titleslide in section - is otherwise overwritten by the print.js funciton
+// .scroll-page div[data-background-slide-name="thm-title-slide-1"] {
+// 	position: absolute;
+// 	bottom: 0px;
+// 	top: 0px;
+// 	left: 0px;
+// 	right: 0px;
+// 	inset: 0px !important;
+// }
 
 // Theme template ------------------------------
 @import "../template/theme";
