@@ -35,9 +35,11 @@ Use the integrated [print-view](https://tjkc14.git-pages.thm.de/revealjs-thm-tem
 
 ## Installation
 
-clone this Repo in full depth - otherwise there are some plugins you might need to pull seperately as this template comes with a small selection preconfigured.
+1. Install [Node.js](https://nodejs.org/en) (10.0.0 or later)
+2. Clone this Repo in full depth - otherwise there are some plugins you might need to pull seperately as this template comes with a small selection preconfigured.
+3. `npm install` and `npm run start`
 
-### Just in case you missed it
+### Just in case you missed cloning with submodules
 
 ```bash
 cd plugin
