@@ -74,7 +74,7 @@ export default class PrintView {
     async activate() {
 
         const config = this.Reveal.getConfig();
-        const speakerName = config.speakerName;
+        // const speakerName = config.speakerName; Don't know why this was added here?
         const slides = queryAll(this.Reveal.getRevealElement(), SLIDES_SELECTOR)
         const totalslides = this.Reveal.getTotalSlides()
         // Compute slide numbers now, before we start duplicating slides

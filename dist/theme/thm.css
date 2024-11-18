@@ -450,6 +450,27 @@ section.present[data-background-slide-name=thm-title-slide-1] {
   margin: 0;
 }
 
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-scroll {
+  display: block !important;
+  position: absolute;
+  font-size: 14px;
+  z-index: inherit;
+  visibility: visible;
+  right: 3.8%;
+  bottom: 2.6%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(50%);
+  font-family: Arial;
+  font-size: 12pt;
+  text-align: center;
+  height: 12pt;
+  line-height: 1;
+  background-color: transparent;
+  color: #fff;
+  padding: 5px;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
