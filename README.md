@@ -42,7 +42,7 @@ Use the integrated [print-view](https://tjkc14.git-pages.thm.de/revealjs-thm-tem
 ### Just in case you missed cloning with submodules
 
 ```bash
-cd plugin
+cd plugins
 git clone https://github.com/denehyg/reveal.js-menu.git
 git clone https://github.com/rajgoel/reveal.js-plugins.git
 ```
