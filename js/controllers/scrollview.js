@@ -85,9 +85,9 @@ export default class ScrollView {
 	activate() {
 
 		if (this.active) return;
-
+		let config = this.Reveal.getConfig();
 		// Compute slide numbers now, before we start duplicating slides
-		const injectPageNumbers = true; // this.config.slideNumber; //&& /all|print/i.test(config.showSlideNumber);
+		const injectPageNumbers = config.slideNumber && /all|print/i.test(config.showSlideNumber);
 		const totalslides = this.Reveal.getTotalSlides()
 
 		const stateBeforeActivation = this.Reveal.getState();

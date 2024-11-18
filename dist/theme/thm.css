@@ -15,7 +15,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * FOOTER
  *********************************************/
 .reveal .footer {
-  position: fixed;
+  position: absolute;
   display: block;
   bottom: 0;
   left: 0;
@@ -26,7 +26,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 
 .reveal .footer-left {
-  position: fixed;
+  position: absolute;
   display: block;
   left: 3.5%;
   bottom: 2.6%;
@@ -455,7 +455,7 @@ section.present[data-background-slide-name=thm-title-slide-1] {
   display: block !important;
   position: absolute;
   font-size: 14px;
-  z-index: inherit;
+  z-index: 1;
   visibility: visible;
   right: 3.8%;
   bottom: 2.6%;
@@ -467,8 +467,12 @@ section.present[data-background-slide-name=thm-title-slide-1] {
   height: 12pt;
   line-height: 1;
   background-color: transparent;
-  color: #fff;
+  color: #fff !important;
   padding: 5px;
+}
+
+.reveal .slide-number-scroll .slide-number-a {
+  color: white;
 }
 
 /*********************************************
