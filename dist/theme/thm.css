@@ -482,11 +482,11 @@ section.present[data-background-slide-name=thm-title-slide-1] {
   --r-background-color: #fff;
   --r-main-font: Arial, Source Sans Pro, Helvetica, sans-serif;
   --r-main-font-size: 42px;
-  --r-main-color: #4A5C66;
+  --r-main-color: #4a5c66;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Arial, Source Sans Pro, Helvetica, sans-serif;
-  --r-heading-color: #4A5C66;
+  --r-heading-color: #4a5c66;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
@@ -498,13 +498,13 @@ section.present[data-background-slide-name=thm-title-slide-1] {
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #80BA24;
+  --r-link-color: #80ba24;
   --r-link-color-dark: #547a18;
   --r-link-color-hover: #a5dd4e;
   --r-selection-background-color: #bbe579;
   --r-selection-color: #fff;
-  --r-overlay-element-bg-color: 240, 240, 240;
-  --r-overlay-element-fg-color: 0, 0, 0;
+  --r-overlay-element-bg-color: 128, 186, 36;
+  --r-overlay-element-fg-color: 74, 92, 102;
 }
 
 .reveal-viewport {

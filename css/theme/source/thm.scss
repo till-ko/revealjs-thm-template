@@ -18,12 +18,19 @@
 @import url(./fonts/din-pro/din-pro.css);
 //@import url(./fonts/source-sans-pro/source-sans-pro.css);
 
+// THM CD Color Palette
+$THM_GREEN: #80ba24;
+$THM_GREY: #4a5c66;
+$THM_RED: #9C132E;
+$THM_ORANGE: #F4AA00;
+$THM_CYAN: #00B8E4;
+$THM_BLUE: #002878;
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
-$mainColor: #4A5C66;
-$headingColor: #4A5C66;
+$mainColor: $THM_GREY;
+$headingColor: $THM_GREY;
 
 $mainFontSize: 42px;
 $mainFont: 'Arial', 'Source Sans Pro', Helvetica, sans-serif;
@@ -32,9 +39,11 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #80BA24;
+$linkColor: $THM_GREEN;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
+$overlayElementBgColor: red($THM_GREEN), green($THM_GREEN), blue($THM_GREEN);
+$overlayElementFgColor: red($THM_GREY), green($THM_GREY), blue($THM_GREY);
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
@@ -43,6 +52,19 @@ $heading4Size: 1.0em;
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
+
+// .reveal.has-dark-background,
+// .reveal-viewport.has-dark-background {
+// 	--r-overlay-element-bg-color: 128, 186, 36;
+// 	--r-overlay-element-fg-color: 0, 0, 0;
+// }
+// .reveal.has-light-background,
+// .reveal-viewport.has-light-background {
+// 	--r-overlay-element-bg-color: 0, 0, 0;
+// 	--r-overlay-element-fg-color: 128, 186, 36;
+// }
+
+
 
 /*********************************************
  * FOOTER
