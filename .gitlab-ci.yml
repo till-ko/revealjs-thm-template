@@ -17,9 +17,6 @@ before_script:
 pages:
   tags:
     - npm
-    # added tjkc14 tag to use my own runner since the shared one is having issues a lot. 
-    # feel free to comment this out or tag your own runner. If need be i can ask for a seperate shared runner.
-    - tjkc14
   stage: deploy
   script:
     - mkdir .public
