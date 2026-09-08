@@ -10,7 +10,7 @@ A paragraph with some text and a [link](https://thm.de).
 ## .md - Horizontal Slides
 
 Line dividers (3 dashes) are used to distinguish individual slides in markdown.
-Seperators however can also be customized (see next slide).
+Separators however can also be customized (see next slide).
 
 ___
 

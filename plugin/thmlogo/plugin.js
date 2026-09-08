@@ -27,7 +27,7 @@ function initializeTHMScroll() {
 	createTHMScrollview();
 }
 
-// Enum for differnt logos
+// Enum for different logos
 const LogosEnum = {
 	// CF = Campus Friedberg, CG = Campus Giessen
 	THM: 'thmlogo',
@@ -169,7 +169,7 @@ function createTHMScrollview() {
 	// var pages = document.querySelectorAll(".scroll-page");
 	// for (var i=0; i<pages.length; i++) {
 	// 	if (pages[i].querySelector( '.scroll-page-content div[data-background-slide-name="thm-title-slide-1"]')!==null) {
-	// 		// This is a THM Title slide and therefore needs the wohle page and no auto height to be displayed correctly
+	// 		// This is a THM Title slide and therefore needs the whole page and no auto height to be displayed correctly
 		
 	// 		// pages[i].style['--slide-height'] = '1028 px';
 	// 		// pages[i].style['--slide-height'] = slideSize.height + 'px';

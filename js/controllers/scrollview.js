@@ -388,7 +388,7 @@ export default class ScrollView {
 			// console.log(page.contentElement.querySelector( 'div[data-background-slide-name="thm-title-slide-1"]'));
 			// .firstChild.className);
 			if (page.contentElement.querySelector('div[data-background-slide-name="thm-title-slide-1"]') !== null) {
-				// This is a THM Title slide and therefore needs the wohle page and no auto height to be displayed correctly
+				// This is a THM Title slide and therefore needs the whole page and no auto height to be displayed correctly
 				// console.log(slideSize.height);
 				page.pageElement.style.setProperty('--slide-height', slideSize.height + 'px');
 			}

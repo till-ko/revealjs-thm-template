@@ -187,7 +187,7 @@ html.reveal-print {
 		height: 75.4%;
 	}
 
-	// Allow Whitespace on Titleslide in section - is otherwise overwritten by the print.js funciton
+	// Allow Whitespace on Titleslide in section - is otherwise overwritten by the print.js function
 	section.present[data-background-slide-name="thm-title-slide-1"] {
 		position: absolute;
 		bottom: 0px;
@@ -201,7 +201,7 @@ html.reveal-print {
 	* THM TITLE STYLING
 	*********************************************/
 	// HEADER
-	// from left: 70% text start 71,7% ende 96,7%
+	// from left: 70% text start 71,7% end 96,7%
 	// from top: 42,4% text ends at bottom at: 86,1% to: 89,7%
 	div.thm-title-1 {
 		position: absolute;
