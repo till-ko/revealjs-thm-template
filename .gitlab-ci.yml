@@ -9,8 +9,10 @@ before_script:
   - cd plugin
   - rm -r -f reveal.js-menu
   - rm -r -f reveal.js-plugins
+  - rm -r -f reveal.js-presentationhub
   - git clone https://github.com/denehyg/reveal.js-menu.git
   - git clone https://github.com/rajgoel/reveal.js-plugins.git
+  - git clone https://github.com/till-ko/reveal.js-presentationhub.git
   - cd ..
 
 # provide full repository as static git-page
