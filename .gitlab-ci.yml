@@ -18,10 +18,10 @@ pages:
   tags:
     - npm
   stage: deploy
-  #script:
-    #- mkdir public
-    #- cp -r * public
-    # - mv .public public
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
   artifacts:
     paths:
       - public
