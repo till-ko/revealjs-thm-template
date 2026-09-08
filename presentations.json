@@ -126,12 +126,12 @@
     "url": "presentations/RevealJS_Demo/"
   },
   {
-    "id": "THM_CI_Example",
+    "id": "THM-Templates/THM_CI_Example",
     "title": "THM reveal.js template",
     "description": "A THM Corporate Design Template",
     "author": "Till Koch",
-    "category": "uncategorized",
+    "category": "THM Templates",
     "tags": [],
-    "url": "presentations/THM_CI_Example/"
+    "url": "presentations/THM-Templates/THM_CI_Example/"
   }
 ]
