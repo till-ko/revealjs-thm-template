@@ -1,0 +1,137 @@
+[
+  {
+    "id": "examples/export",
+    "title": "Reveal JS presentation",
+    "description": "A framework for easily creating beautiful presentations using HTML",
+    "author": "Hakim El Hattab",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/export/"
+  },
+  {
+    "id": "examples/500-slides",
+    "title": "reveal.js - 500 slides",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/500-slides/"
+  },
+  {
+    "id": "examples/auto-animate",
+    "title": "reveal.js - Auto Animate",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/auto-animate/"
+  },
+  {
+    "id": "examples/barebones",
+    "title": "reveal.js - Barebones",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/barebones/"
+  },
+  {
+    "id": "examples/layout-helpers",
+    "title": "reveal.js - Layout Helpers",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/layout-helpers/"
+  },
+  {
+    "id": "examples/lightbox",
+    "title": "reveal.js - Ligthbox",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/lightbox/"
+  },
+  {
+    "id": "examples/markdown",
+    "title": "reveal.js - Markdown Example",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/markdown/"
+  },
+  {
+    "id": "examples/math",
+    "title": "reveal.js - Math Plugin",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/math/"
+  },
+  {
+    "id": "examples/multiple-presentations",
+    "title": "reveal.js - Multiple Presentations",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/multiple-presentations/"
+  },
+  {
+    "id": "examples/scroll",
+    "title": "reveal.js - Scroll View",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/scroll/"
+  },
+  {
+    "id": "examples/backgrounds",
+    "title": "reveal.js - Slide Backgrounds",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/backgrounds/"
+  },
+  {
+    "id": "examples/transitions",
+    "title": "reveal.js - Slide Transitions",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/transitions/"
+  },
+  {
+    "id": "examples/media",
+    "title": "reveal.js - Video, Audio and Iframes",
+    "description": "",
+    "author": "",
+    "category": "Examples",
+    "tags": [],
+    "url": "presentations/examples/media/"
+  },
+  {
+    "id": "RevealJS_Demo",
+    "title": "reveal.js – The HTML Presentation Framework",
+    "description": "A framework for easily creating beautiful presentations using HTML",
+    "author": "Hakim El Hattab",
+    "category": "uncategorized",
+    "tags": [],
+    "url": "presentations/RevealJS_Demo/"
+  },
+  {
+    "id": "THM-Templates/THM_CI_Example",
+    "title": "THM reveal.js template",
+    "description": "A THM Corporate Design Template",
+    "author": "Till Koch",
+    "category": "THM Templates",
+    "tags": [],
+    "url": "presentations/THM-Templates/THM_CI_Example/"
+  }
+]

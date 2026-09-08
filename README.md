@@ -45,6 +45,7 @@ Use the integrated [print-view](https://tjkc14.git-pages.thm.de/revealjs-thm-tem
 cd plugin
 git clone https://github.com/denehyg/reveal.js-menu.git
 git clone https://github.com/rajgoel/reveal.js-plugins.git
+git clone https://github.com/till-ko/reveal.js-presentationhub.git
 ```
 
 ## Credit To REVEALJS

@@ -68,6 +68,7 @@
 	},
 	"scripts": {
 		"dev": "npm run start",
+		"prestart": "npm run hub",
 		"start": "vite",
 		"prepack": "npm run build",
 		"build:core": "tsc && vite build && vite build -c vite.config.styles.ts && node scripts/add-banner.js dist/reveal.js",
@@ -78,7 +79,8 @@
 		"test": "node scripts/test.js",
 		"react:build": "npm run --prefix react build",
 		"react:demo": "npm run --prefix react demo",
-		"react:test": "npm run --prefix react test"
+		"react:test": "npm run --prefix react test",
+		"hub": "node plugin/reveal.js-presentationhub/discover.js"
 	},
 	"author": {
 		"name": "Hakim El Hattab",
