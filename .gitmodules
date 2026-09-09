@@ -9,3 +9,8 @@
 [submodule "plugin/reveal.js-presentationhub"]
 	path = plugin/reveal.js-presentationhub
 	url = https://github.com/till-ko/reveal.js-presentationhub.git
+
+[submodule "presentations/personal"]
+    path = presentations/personal
+    url = https://github.com/till-ko/personal.git
+    update = none

@@ -1,5 +1,14 @@
 [
   {
+    "id": "personal/kihug/kolloquium",
+    "title": "Bachelor Thesis Kolloquium",
+    "description": "a presentation held at my bachelor thesis kolloq",
+    "author": "Till Koch",
+    "category": "Personal",
+    "tags": [],
+    "url": "presentations/personal/kihug/kolloquium/"
+  },
+  {
     "id": "personal/kihug/kihugreveal",
     "title": "KIHUG Presentation",
     "description": "a presentation held for the kihug project team",
@@ -7,6 +16,15 @@
     "category": "Personal",
     "tags": [],
     "url": "presentations/personal/kihug/kihugreveal/"
+  },
+  {
+    "id": "personal/kihug/kihug-projektseminar",
+    "title": "Projektseminar Präsentation",
+    "description": "a presentation held at the projectseminar for my bachelor thesis",
+    "author": "Till Koch",
+    "category": "Personal",
+    "tags": [],
+    "url": "presentations/personal/kihug/kihug-projektseminar/"
   },
   {
     "id": "examples/export",
