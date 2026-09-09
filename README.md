@@ -1,18 +1,19 @@
 # Reveal.js THM Template
 
-[![pipeline status](https://git.thm.de/tjkc14/revealjs-thm-template/badges/master/pipeline.svg)](https://tjkc14.git-pages.thm.de/revealjs-thm-template/)
+[![pages-build-deployment](https://github.com/till-ko/revealjs-thm-template/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/till-ko/revealjs-thm-template/actions/workflows/pages/pages-build-deployment) [![Spellcheck](https://github.com/till-ko/revealjs-thm-template/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/till-ko/revealjs-thm-template/actions/workflows/spellcheck.yml) [![Tests](https://github.com/till-ko/revealjs-thm-template/actions/workflows/test.yml/badge.svg)](https://github.com/till-ko/revealjs-thm-template/actions/workflows/test.yml)
 
 This is a THM corporate design template for the reveal.js Framework.
-This Repo is currently under construction not all features you may need are implemented today. Feel free to add them to your liking or just kindly ask for them.
+This Repo is still being maintained not all features you may need are implemented today. Feel free to add them to your liking or just kindly ask for them.
 
-## See [Demo](https://tjkc14.git-pages.thm.de/revealjs-thm-template/) for yourself
+## NEW!! See [Presentation Hub Demo](https://till-ko.github.io/revealjs-thm-template/) for yourself
 
-Starting today, you can take a test drive of the "Frankenstein" version of the original PowerPoint presentations in our corporate design and hakimel's demo presentation on a statically hosted GitLab page. I've brought this presentation to life, stitching together the best elements from both worlds to showcase the possibilities.  
-Explore the fusion of our CI-Design and the content that drives reveal.js, on this page: <https://tjkc14.git-pages.thm.de/revealjs-thm-template/>
+Starting today, you can take a test drive of the "Frankenstein" version of the original PowerPoint presentations in our corporate design and hakimel's demo presentation on a statically hosted GitHub page. I've brought this presentation to life, stitching together the best elements from both worlds to showcase the possibilities.  
+Explore the fusion of our CI-Design and the content that drives reveal.js, on this page: <https://till-ko.github.io/revealjs-thm-template/presentations/THM-Templates/THM_CI_Example/>
 
-Note: On statically hosted Git-pages free-hand-writings are only kept until you reload the page!
+Note: On statically hosted Git-pages free-hand-writings are only kept until you reload the page!  
+Note: This repo also supports GitLabPage hosting. (see also: the gitlab project)
 
-## Version 5 is here: [SCROLL VIEW](https://tjkc14.git-pages.thm.de/revealjs-thm-template/?view=scroll)
+## Version 5 is here: [SCROLL VIEW](https://till-ko.github.io/revealjs-thm-template/presentations/THM-Templates/THM_CI_Example/?view=scroll)
 
 Try the new scroll view introduced by hakimel and now also supported by this fork. It is especially useful for Mobile. Either add `/?view=scroll` to watch it in one instance - or see the `Reveal.initialize({})` configuration section to enable it globally if you like it.
 
@@ -36,7 +37,7 @@ Use the integrated [print-view](https://tjkc14.git-pages.thm.de/revealjs-thm-tem
 ## Installation
 
 1. Install [Node.js](https://nodejs.org/en) (10.0.0 or later)
-2. Clone this Repo in full depth - otherwise there are some plugins you might need to pull seperately as this template comes with a small selection preconfigured.
+2. Clone this Repo in full depth - otherwise there are some plugins you might need to pull seperately as this template comes with a small selection preconfigured. (just ignore my personal submodule under presentations with my "private" presentations, as i have been actively using this implementation myself and could not be bothered with removing the submodule. So i made it optional. Just insert your own slides there - or use your own repository to fill this structure, then you dont need to fork this whole repo and can start playing right away)
 3. `npm install` and `npm run start`
 
 ### Just in case you missed cloning with submodules
