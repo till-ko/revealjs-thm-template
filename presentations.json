@@ -1,12 +1,12 @@
 [
   {
-    "id": "kihug/kihugreveal",
+    "id": "personal/kihug/kihugreveal",
     "title": "KIHUG Presentation",
     "description": "a presentation held for the kihug project team",
     "author": "Till Koch",
-    "category": "Kihug",
+    "category": "Personal",
     "tags": [],
-    "url": "presentations/kihug/kihugreveal/"
+    "url": "presentations/personal/kihug/kihugreveal/"
   },
   {
     "id": "examples/export",
