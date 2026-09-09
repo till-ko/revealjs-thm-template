@@ -1,5 +1,14 @@
 [
   {
+    "id": "kihug/kihugreveal",
+    "title": "KIHUG Presentation",
+    "description": "a presentation held for the kihug project team",
+    "author": "Till Koch",
+    "category": "Kihug",
+    "tags": [],
+    "url": "presentations/kihug/kihugreveal/"
+  },
+  {
     "id": "examples/export",
     "title": "Reveal JS presentation",
     "description": "A framework for easily creating beautiful presentations using HTML",

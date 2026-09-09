@@ -14,7 +14,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+	<title>reveal.js</title>
 
 	<link rel="stylesheet" href="../../../dist/reset.css">
 	<link rel="stylesheet" href="../../../dist/reveal.css">
@@ -150,8 +150,8 @@
 					<p>That's it, time to go back up.</p>
 					<br>
 					<a href="#/2">
-						<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);"
-							width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+						<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178"
+							height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
 					</a>
 				</section>
 			</section>
@@ -238,12 +238,12 @@
 				<p>Automatically animate matching elements across slides with <a
 						href="https://revealjs.com/auto-animate/">Auto-Animate</a>.</p>
 				<div class="r-hstack justify-center">
-					<div data-id="box1"
-						style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-					<div data-id="box2"
-						style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-					<div data-id="box3"
-						style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+					</div>
+					<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+					</div>
+					<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+					</div>
 				</div>
 			</section>
 			<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
@@ -333,9 +333,8 @@
 					</p>
 					<p class="fragment fade-in-then-out">fade-in-then-out</p>
 					<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-					<p>Highlight <span class="fragment highlight-red">red</span> <span
-							class="fragment highlight-blue">blue</span> <span
-							class="fragment highlight-green">green</span></p>
+					<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span>
+						<span class="fragment highlight-green">green</span></p>
 				</section>
 			</section>
 
@@ -419,8 +418,8 @@
 					<h2>Image Backgrounds</h2>
 					<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
 				</section>
-				<section data-background="https://static.slid.es/reveal/image-placeholder.png"
-					data-background-repeat="repeat" data-background-size="100px">
+				<section data-background="https://static.slid.es/reveal/image-placeholder.png" data-background-repeat="repeat"
+					data-background-size="100px">
 					<h2>Tiled Backgrounds</h2>
 					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
 				</section>
@@ -550,7 +549,9 @@
 				<h2>Export to PDF</h2>
 				<p>Presentations can be <a href="https://revealjs.com/pdf-export/">exported to PDF</a>, here's an
 					example:</p>
-				<iframe src="THM_reveal_js_template.pdf" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+				<iframe src="THM_reveal_js_template.pdf" width="445" height="355" frameborder="0" marginwidth="0"
+					marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;"
+					allowfullscreen></iframe>
 
 				<!-- <iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355"
 					frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
@@ -649,7 +650,7 @@ Reveal.on( 'customevent', function() {
 			 * Uncomment the following line or add "/?view=scroll" to your browser for single instance use
 			*********************************************/
 			// view: 'scroll',
-			scrollProgress: true, 
+			scrollProgress: true,
 			// Other Options :
 			// - 'auto':     Show the scrollbar while scrolling, hide while idle
 			// - true:     Always show the scrollbar
@@ -675,7 +676,7 @@ Reveal.on( 'customevent', function() {
 			slideNumber: 'c', // other options: c/t to showcase total number of slides
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealChalkboard, RevealCustomControls,],
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealChalkboard, RevealCustomControls],
 
 			chalkboard: {
 				boardmarkerWidth: 3,
